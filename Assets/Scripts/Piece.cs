@@ -14,8 +14,28 @@ public abstract class Piece
     }
 
     public PieceType type;
-    public Board board;
+    public bool sideIsWhite;
+    private Board board;
 
     public abstract bool MovePiece(int x, int y);
+
+    public bool BecomeCaptured() 
+    {
+        return true;
+    }
+
+    public bool CapturePiece() 
+    {
+        return true;
+    }
+
+
+
+    public Board GetBoard() 
+    { 
+        return board;
+    }
+
+
 
 }
